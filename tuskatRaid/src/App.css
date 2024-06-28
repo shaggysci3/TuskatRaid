@@ -149,10 +149,12 @@ a{
 }
 .albumCover{
   width: 450px;
+  box-shadow: 7px 7px 20px 1px black;
 }
 .albumContainer{
   display: flex;
   flex-direction: row;
+  
 }
 .albumName{
 

@@ -156,12 +156,14 @@
       }
     .albumCover{
         width: 300px;
+        box-shadow: 7px 7px 20px 1px black;
     }
       
     
       .albumContainer{
         display: flex;
         flex-direction: column;
+        
       }
       .albumName{
         font-size: 14pt;
