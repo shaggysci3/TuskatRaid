@@ -15,7 +15,7 @@ const Home = () =>{
             <div className="buttonContainer">
             <Link className="start">Events</Link>
             <Link className="start">Listen</Link>
-            <Link className="start">Listen</Link>
+            <Link className="start">Theaviev</Link>
             </div>
         </div>
         <div className="albumList">
