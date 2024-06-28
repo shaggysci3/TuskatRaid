@@ -22,6 +22,7 @@ import Admin from "./routes/Admin";
 import Contact from "./routes/Contact";
 import About from "./routes/About";
 import Footer from "./components/Footer";
+import "./Phone.css"
 
 
 

@@ -1,0 +1,154 @@
+@media only screen and (max-width: 600px) {
+    #root {
+        /* max-width: 1280px; */
+        margin: 0;
+        /* text-align: center; */
+        font-family: 'Android Assassin', sans-serif;
+        letter-spacing: .06em;
+      }
+      body{
+        margin: unset;
+      }
+      .siteName{
+        margin: 0;
+        color: white;
+        height: 0px;
+        visibility: hidden;
+        width: 0px;
+        scale: 0%;
+      }
+      .Navbar {
+        display: flex;
+        justify-content: space-between;
+        background-color: rgba(0, 0, 0, 0.253);
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        flex-direction: row;
+        z-index: 2;
+      }
+      .logo{
+        height: 50px;
+      }
+      .linkContainer{
+        display: flex;
+        flex-direction: row;
+      }
+      .navLink{
+        font-family: 'Android Assassin', sans-serif;
+        transition: .3s;
+          display: inline-block;
+          /* font-family: Helvetica, Arial, sans-serif; */
+          padding: 10px 15px;
+          margin: 5px;
+        color:#F3EEE6;
+        backdrop-filter: blur(10px);
+        border-radius: 50px;
+        border: 1px solid white;
+        font-size: 11pt;
+        letter-spacing: .06em;
+        
+      }
+      .navLink:hover{
+        
+        transition: .1s;
+          margin: 5px 0;
+          padding: 10px 20px;
+          border: 1px solid #fff;
+          cursor: pointer;
+        color: #E6AA66;
+      
+      }
+      .footLink{
+        margin: 0;
+        padding: 1px 10px;
+        color: #F3EEE6;
+      }
+      .footLink:hover{
+        cursor: pointer;
+        color:#E6AA66;
+      
+      }
+      a{
+        color: unset;
+        text-decoration: none;
+      }
+      .footer{
+        position: relative;
+        z-index: 2;
+        background-color:#643B22;
+        width: 100%;
+        height: 60px;
+        display: flex;
+          justify-content: center;
+          border-radius: 10px 10px 0px 0px;
+          align-items: center;
+          top: 402px;
+      }
+      .homePage{
+        background:linear-gradient(360deg, rgba(0, 0, 0, 0.26), rgba(1, 1, 24, 0.5)), linear-gradient(135deg, rgba(157, 0, 219, 0.753), rgba(0, 255, 255, 0.774)), url('https://cdn.pixilart.com/photos/large/be7eb796ea6525c.png');
+        
+        background-position:top;
+        background-repeat: no-repeat;
+        background-size:cover;
+        
+        background-attachment:fixed;
+        background-blend-mode: color-burn;
+        height: 1000px;
+        
+        
+        
+      }
+      .start{
+        transition: .3s;
+          display: inline-block;
+          font-family: 'Android Assassin', sans-serif;
+          color: #fff;
+          border: 1px solid rgba(255, 255, 255, .5);
+          font-size: 15px;
+          letter-spacing: .06em;
+          text-transform: uppercase;
+          border-radius: 50px;
+          padding: 10px 15px;
+          margin: 5px;
+          text-decoration: none;
+          backdrop-filter: blur(10px);
+      
+      
+      }
+      .start:hover{
+        transition: .1s;
+          margin: 5px 0;
+          padding: 10px 20px;
+          border: 1px solid #fff;
+          cursor: pointer;
+          color: #E6AA66;
+      }
+      .logoHome {
+        vertical-align: middle;
+        height: 400px;
+        position: fixed;
+        z-index: 0;
+        top: 70px;
+      }
+      .slider {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 600px;
+      }
+      
+      .albums {
+        z-index: 1;
+        background-color: #F3EEE6;
+        height: 800px;
+        position: relative;
+      }
+      .buttonContainer{
+        position: fixed;
+        top: 424px;
+      }
+      
+
+
+}

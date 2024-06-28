@@ -10,7 +10,7 @@ const Navbar = () =>{
     return(
       <>
       <div className="Navbar">
-        <Link style={{display:"flex"}}>
+        <Link className="siteName" style={{display:"flex"}}>
         <img className="logo" src="https://cdn.pixilart.com/photos/large/02c512aec78be97.png"></img>
         <h1 style={{margin:"5px",color:"white"}}>Tusken and the Raiders</h1>
         </Link>
