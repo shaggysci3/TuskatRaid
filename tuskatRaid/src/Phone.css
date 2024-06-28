@@ -88,7 +88,7 @@
           top: 402px;
       }
       .homePage{
-        background:linear-gradient(360deg, rgba(0, 0, 0, 0.089), rgba(1, 1, 24, 0.192)),linear-gradient(135deg rgba(157, 0, 219, 0.24)3), rgba(0, 255, 255, 0.336) , url('https://cdn.pixilart.com/photos/large/be7eb796ea6525c.png');
+        background:linear-gradient(360deg, rgba(0, 0, 0, 0.089), rgba(1, 1, 24, 0.192)), linear-gradient(135deg, rgba(157, 0, 219, 0.753), rgba(0, 255, 255, 0.774)), url('https://cdn.pixilart.com/photos/large/be7eb796ea6525c.png');
         
         background-position:top;
         background-repeat: no-repeat;
