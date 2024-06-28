@@ -133,14 +133,28 @@ a{
   height: 600px;
 }
 
-.albums {
+.albumList {
   z-index: 1;
   background-color: #F3EEE6;
   height: 800px;
   position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 .buttonContainer{
   position: fixed;
   top: 424px;
 }
+.albumCover{
+  width: 450px;
+}
+.albumContainer{
+  display: flex;
+}
+.albumName{
+  
+}
+
 }

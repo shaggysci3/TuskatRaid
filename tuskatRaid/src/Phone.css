@@ -19,7 +19,6 @@
       }
       .Navbar {
         display: flex;
-        justify-content: space-between;
         background-color: rgba(0, 0, 0, 0.253);
         align-items: center;
         position: fixed;
@@ -28,7 +27,7 @@
         z-index: 2;
         border-bottom: solid 2px rgba(241, 239, 239, 0.445);
         padding: 10px;
-      }
+    }
       .logo{
         height: 50px;
       }
@@ -140,17 +139,31 @@
         height: 600px;
       }
       
-      .albums {
+      .albumList {
         z-index: 1;
         background-color: #F3EEE6;
         height: 800px;
         position: relative;
-      }
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
       .buttonContainer{
         position: fixed;
         top: 424px;
       }
+    .albumCover{
+        width: 300px;
+    }
       
-
+    
+      .albumContainer{
+        display: flex;
+      }
+      .albumName{
+        font-size: 14pt;
+        
+      }
 
 }
