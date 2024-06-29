@@ -13,15 +13,15 @@ const Home = () =>{
         <div className="slider">
             <img className="logoHome" src="https://cdn.pixilart.com/photos/large/02c512aec78be97.png"></img>
             <div className="buttonContainer">
-            <Link className="start">Events</Link>
-            <Link className="start">Listen</Link>
-            <Link className="start">Theaviev</Link>
+            <Link to={"/shows"} className="start">Shows</Link>
+            <Link to={"/recording"} className="start">Listen</Link>
+            <a style={{scrollBehavior:"smooth"}} href="#feature" className="start">Featured</a>
             </div>
         </div>
         <div className="albumList">
-            <h1 className="albumName">featured Album: Terrapinix</h1>
+            <h1 id="feature"  className="albumName">featured Album: Terrapinix</h1>
             <div className="albumContainer">
-            <img className="albumCover" src="https://cdn.pixilart.com/photos/large/e87ac512e08f0a1.png"></img>
+            <img  className="albumCover" src="https://cdn.pixilart.com/photos/large/e87ac512e08f0a1.png"></img>
             <ul>
                 <h2>Songs</h2>
                 <li>The Terrapinix Terror</li>

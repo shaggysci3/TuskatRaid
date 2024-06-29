@@ -1,4 +1,5 @@
 import { useState } from "react"
+import Events from "../components/Events"
 
 const Upcoming = () =>{
  
@@ -8,8 +9,9 @@ const Upcoming = () =>{
 
     return(
       <>
-      <div className="">
-        <h1>Current Venues</h1>
+      <div className="pageContainer">
+         <Events/>
+
       </div>
       </>
     )

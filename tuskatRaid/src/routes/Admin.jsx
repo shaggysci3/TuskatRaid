@@ -8,7 +8,7 @@ const Admin = () =>{
 
     return(
       <>
-      <div className="">
+      <div className="pageContainer">
         <h1>Admin Login</h1>
       </div>
         

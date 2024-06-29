@@ -8,7 +8,7 @@ const Contact = () =>{
 
     return(
       <>
-      <div className="">
+      <div className="pageContainer">
         <h1>Phone Numbers</h1>
       </div>
         

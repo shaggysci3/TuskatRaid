@@ -8,7 +8,7 @@ const Recording = () =>{
 
     return(
       <>
-      <div className="">
+      <div className="pageContainer">
         <h1>Past Shows</h1>
       </div>
         

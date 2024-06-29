@@ -8,7 +8,7 @@ const About = () =>{
 
     return(
       <>
-      <div className="">
+      <div className="pageContaienr">
         <h1> About Band Members</h1>
       </div>
         

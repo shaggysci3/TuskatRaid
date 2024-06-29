@@ -9,6 +9,7 @@ import {
 
 import { Outlet } from "react-router-dom";
 import "./App.css"
+import "./Routes.css"
 
 import ErrorPage from "./routes/ErrorPage";
 import Home from "./routes/Home";
