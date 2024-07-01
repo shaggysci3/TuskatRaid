@@ -1,5 +1,7 @@
 import { useState } from "react"
 
+import YoutubeEmbed from "../components/YoutubeEmbed"
+
 const Recording = () =>{
  
 
@@ -8,8 +10,12 @@ const Recording = () =>{
 
     return(
       <>
+      
       <div className="pageContainer">
-        <h1>Past Shows</h1>
+        <div className="recordingPage">
+          <h1>Past Shows</h1>
+          <YoutubeEmbed videoId="uTpSm5AZzT0" />
+        </div>
       </div>
         
       </>

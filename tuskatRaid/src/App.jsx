@@ -24,6 +24,7 @@ import Contact from "./routes/Contact";
 import About from "./routes/About";
 import Footer from "./components/Footer";
 import "./Phone.css"
+import Login from "./routes/login";
 
 
 
@@ -31,7 +32,7 @@ import "./Phone.css"
 
 
 const App = () =>{
- 
+  const[userData,setUserData]=useState([])
   
   
  
@@ -39,7 +40,7 @@ const App = () =>{
     <>
     <div className="siteContainer">
       <Navbar/>
-      <Outlet/>
+      <Outlet context={[userData,setUserData]}/>
       <Footer/>
       
     </div>
@@ -67,7 +68,7 @@ const router = createBrowserRouter([
         element: <Recording/>
       },{
         path: "/Admin",
-        element: <Admin/>
+        element: <Login/>
       },{
         path: "/About",
         element: <About/>
