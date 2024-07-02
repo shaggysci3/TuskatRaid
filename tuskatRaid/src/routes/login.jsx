@@ -37,6 +37,7 @@ const Login = () => {
   
       if (!response.ok) {
         // Handle the case where the server returns an error status
+        setLogged(false)
         alert(`Username or Password incorrect`)
         console.error(`Failed to add user. Status: ${response.status}`);
         return;
@@ -46,6 +47,7 @@ const Login = () => {
       const addedUser = await response.json();
       sessionStorage.setItem('token', JSON.stringify(addedUser))
       console.log(addedUser)
+      setLogged(true)
       
       setUserData(addedUser)
       
@@ -60,7 +62,7 @@ const Login = () => {
     } catch (error) {
       console.error("Error adding user:", error);
     }finally{
-      setLogged(true)
+      
       setLoading(false)
       
     }
