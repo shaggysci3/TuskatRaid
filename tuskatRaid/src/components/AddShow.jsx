@@ -81,13 +81,12 @@ const AddShow = ({setShow}) => {
     setShow(false)
   }
   
-
+  
   return (
     <>
     {/* <div onClick={handleClick} className="closeButton" style={{left:"317px",top:"16px"}}>X</div> */}
-    <form className="addForm" onSubmit={handleSubmit}>
-        
 
+    <form className="addForm" onSubmit={handleSubmit}>
       <div className="formItem">
         <label>Show Name:</label>
         <br></br>
@@ -100,7 +99,8 @@ const AddShow = ({setShow}) => {
       <div style={{position:"relative"}} className="formItem">
         <label>date:</label>
         <input
-        placeholder="dd/mm/yy"
+        
+        
         type='text'
         id='date'
         value={formData.date}
@@ -109,7 +109,7 @@ const AddShow = ({setShow}) => {
       <div style={{position:"relative"}} className="formItem">
         <label>time:</label>
         <input
-        placeholder="00:00"
+        
         type='text'
         id='time'
         value={formData.time}
@@ -136,7 +136,7 @@ const AddShow = ({setShow}) => {
       <img className='ProductImg-S' src = {formData.img?`${formData.img}`:'https://th.bing.com/th/id/OIG1.sMhHsP9hGxIEbPNAqGkZ?pid=ImgGn'}></img>
       </div>
       
-      <button type="submit">Add</button>
+      <button className="start" type="submit">Add</button>
         
     </form>
     </>

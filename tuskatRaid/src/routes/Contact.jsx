@@ -9,9 +9,9 @@ const Contact = () =>{
     return(
       <>
       <div className="pageContainer">
-        <div >
+        <div className="verticalContainer" >
         <h1>Email us at:</h1>
-        <h2>example email @Email.com</h2>
+        <h2 style={{fontFamily:"none"}}>Brainsandwich@gmail.com</h2>
         </div>
       </div>
         

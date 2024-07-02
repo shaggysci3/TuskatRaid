@@ -210,14 +210,40 @@ a{
     color: black;
     border: solid rgba(0, 0, 0, 0.5);
     padding: 20px;
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.1);
+    /* border-radius: 10px; */
+    background-color: #F3EEE6;
     max-width: 300px;
     flex-direction: column;
     align-items: center;
-
+    box-shadow: 5px 5px 1px 1px black;
 }
+
 .formItem{
-  padding:10px
+  padding:10px;
 }
-
+.addingShows{
+  border: solid 2px black;
+  border-radius: 10px;
+  font-family: sans-serif;
+  padding: 3px;
+  background-color: #E6AA66;
+  position: relative;
+  left: 140px;
+  top: 40px;
+}
+.addingShows:hover{
+  cursor: pointer;
+}
+.addingShows:hover::before {
+  content: "use this form to add shows to this page in a list";
+  display: block;
+  position: absolute;
+  top: 20px; /* Adjust as needed */
+  left:10px;
+  background-color: white;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 5px;
+  width: 300px;
+  
+}

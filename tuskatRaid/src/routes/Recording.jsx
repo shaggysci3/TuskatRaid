@@ -13,8 +13,8 @@ const Recording = () =>{
       
       <div className="pageContainer">
         <div className="recordingPage">
-          <h1>Past Shows</h1>
-          <YoutubeEmbed videoId="uTpSm5AZzT0" />
+          <h1>we have no past shows at the moment</h1>
+          {/* <YoutubeEmbed videoId="uTpSm5AZzT0" /> */}
         </div>
       </div>
         

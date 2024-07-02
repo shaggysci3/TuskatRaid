@@ -27,6 +27,7 @@ const Upcoming = () =>{
       <div style={{display:"flex",flexDirection:"column",alignItems:"center"}} className="pageContainer">
           
          {userData.id==8?<>
+          <div className="addingShows">?</div>
           <AddShow/>
             {/* <img src='https://media1.giphy.com/media/ZBQhoZC0nqknSviPqT/giphy.webp?cid=790b76113a8mnmiu77055p86djrbg9zs0uwf8hxud4njltx5&ep=v1_gifs_search&rid=giphy.webp&ct=g'></img> */}
           </>:<></>}
