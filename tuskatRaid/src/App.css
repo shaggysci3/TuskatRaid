@@ -247,3 +247,28 @@ a{
   width: 300px;
   
 }
+
+.closeButton{
+  background: rgb(216, 68, 63);
+  width: 33px;
+  height: 33px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 33px;
+  border: solid rgb(216, 68, 63) ;
+  position:relative;
+  top: -110px;
+  left: -37px;
+}
+.closeButton:hover{
+  cursor: pointer;
+  background:rgba(157, 0, 219, 0.753) ;
+
+}
+.closeButton:active{
+  background: rgb(216, 36, 30);
+  scale: 90%;
+
+}
