@@ -173,9 +173,9 @@ a{
   flex-direction: row;
   
 }
-.albumName{
+/* .albumName{
 
-}
+} */
 
 }
 
@@ -259,16 +259,61 @@ a{
   border-radius: 33px;
   border: solid rgb(216, 68, 63) ;
   position:relative;
-  top: -110px;
+  top: -170px;
   left: -37px;
+  transition: 200ms;
 }
 .closeButton:hover{
   cursor: pointer;
-  background:rgba(157, 0, 219, 0.753) ;
+  background:rgba(219, 0, 91, 0.753) ;
+  padding-inline: 20px;
+  transition: 200ms;
+  transform: translateX(-6px);
 
 }
 .closeButton:active{
   background: rgb(216, 36, 30);
   scale: 90%;
 
+}
+.form{
+  max-width: 200px;
+  position: relative;
+  font-size: 8pt;
+  display: flex;
+    color: black;
+    border: solid rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    /* border-radius: 10px; */
+    background-color: #F3EEE6;
+    max-width: 300px;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 5px 1px 1px black;
+
+}
+.closeForm{
+  background: rgb(216, 68, 63);
+  /* width: 33px;
+  height: 33px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 33px;
+  border: solid rgb(216, 68, 63) ;
+  position:relative;
+  top: 20px;
+  left: 200px;
+  height: 15px;
+  width: 15px;
+  font-size: 6pt;
+  z-index: 10;
+}
+.closeForm:hover{
+  cursor: pointer;
+  background:rgba(219, 0, 91, 0.753) ;
+  padding-inline: 10px;
+  transition: 100ms;
+  transform: translateX(-5px);
 }

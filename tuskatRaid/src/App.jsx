@@ -10,7 +10,7 @@ import {
 import { Outlet } from "react-router-dom";
 import "./App.css"
 import "./Routes.css"
-
+// import "./Slider.css"
 import ErrorPage from "./routes/ErrorPage";
 import Home from "./routes/Home";
 // import Navbar from "./components/Navbar";

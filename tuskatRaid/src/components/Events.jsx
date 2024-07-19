@@ -6,6 +6,7 @@ import DeleteShow from "./DeleteShow";
 const Events = ({id,time,date,location,img,name}) =>{
  
   const numString = time.toString();
+  const [showForm, setShowForm] = useState(false);
   const[userData,setUserData]=useOutletContext()
   
 
@@ -24,15 +25,20 @@ const Events = ({id,time,date,location,img,name}) =>{
             <img className="albumCover" src={img}></img>
         </div>
         <div className="eventInfo">
-      {userData.id==8?<div>
-        <DeleteShow showId = {id}/>
-        <PatchShow showId={id}/>
-      </div>:<></>}
           {/* <h1>Show's Name</h1> */}
-          <h2>id:{id}</h2>
+          {showForm?<></>:
+          <div>
           <h2>Date: {date}</h2>
           <h2>time: {hours}:{minutes.toString().padStart(2, '0')}</h2>
           <h2>location: {location}</h2>
+          </div>
+        }
+      {userData.id==8?<div>
+        {showForm?<></>:
+        <DeleteShow showId = {id}/>
+        }
+        <PatchShow showForm={showForm} setShowForm={setShowForm} showId={id}/>
+      </div>:<></>}
         </div>
       </div>
       </div>

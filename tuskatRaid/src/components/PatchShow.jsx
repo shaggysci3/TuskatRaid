@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { Button } from 'react-bootstrap';
 import { useOutletContext, useRouteLoaderData } from 'react-router-dom';
 
-const PatchShow = ({showId,render,setRender}) => {
+const PatchShow = ({showId,showForm,setShowForm}) => {
   // states
-  const [showForm, setShowForm] = useState(false);
+  // const [showForm, setShowForm] = useState(false);
 //   const[userData,setUserData]=useOutletContext()
   const [newShow, setNewShow] = useState({
     img:"",
@@ -79,7 +79,7 @@ const PatchShow = ({showId,render,setRender}) => {
     <div className='updateContainer'>
     {!showForm && (
       // <h1>Update Current User</h1>
-      <Button onClick={toggleForm}>
+      <Button className='navLink' style={{color:"black",borderColor:"black"}} onClick={toggleForm}>
         {showForm ? 'UpdateShow' : 'Update show'}
       </Button>
       )}
@@ -87,6 +87,7 @@ const PatchShow = ({showId,render,setRender}) => {
       
       {showForm && (
         <form  onSubmit={handleSubmit}>
+        <Button className='closeForm' onClick={toggleForm}>X</Button>
         <div className='form'>
         <label>new showname</label>
         <input
@@ -100,6 +101,7 @@ const PatchShow = ({showId,render,setRender}) => {
         <label>show date</label>
         <input
           className=''
+          placeholder='00/00/00'
           type='text'
           id='date'
           value={newShow.date}
@@ -108,6 +110,7 @@ const PatchShow = ({showId,render,setRender}) => {
         <label>show time</label>
         <input
           className=''
+          placeholder='1200'
           type='text'
           id='time'
           value={newShow.time}
@@ -116,6 +119,7 @@ const PatchShow = ({showId,render,setRender}) => {
           <label>show location</label>
         <input
           className=''
+          placeholder='Name Location...'
           type='text'
           id='location'
           value={newShow.location}
@@ -124,14 +128,16 @@ const PatchShow = ({showId,render,setRender}) => {
           <label>show image</label>
         <input
           className=''
+          placeholder='Img URL'
           type='text'
           id='img'
           value={newShow.img}
           onChange={handleChange}
           />
+        <Button className='navLink' style={{color:"black",borderColor:"black",fontSize:"10pt"}} type="submit">Submit</Button>
         </div>
         
-        <Button type="submit">Done</Button>
+        
       </form>
        )}
        </div>

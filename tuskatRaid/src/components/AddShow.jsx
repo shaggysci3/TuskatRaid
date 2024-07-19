@@ -124,7 +124,7 @@ const AddShow = ({setShow}) => {
         onChange={handleChange}/>
       </div>
       <div>
-        <label>Diagram Image</label>
+        <label>Image</label>
         <br></br>
         <input
         type='text'
@@ -133,10 +133,10 @@ const AddShow = ({setShow}) => {
         onChange={handleChange}/>
       </div>
       <div>
-      <img className='ProductImg-S' src = {formData.img?`${formData.img}`:'https://th.bing.com/th/id/OIG1.sMhHsP9hGxIEbPNAqGkZ?pid=ImgGn'}></img>
+      <img className='ProductImg-S' src = {formData.img?`${formData.img}`:'https://imgs.search.brave.com/RVhvAn4kkMzSdJkFlO8xlUWHCSWgE7Tog5gRBGWYC3o/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9paDEu/cmVkYnViYmxlLm5l/dC9pbWFnZS4xMjY1/NTg5NDE0LjM1MDQv/bXAsNTA0eDQ5OCxt/YXR0ZSxmOGY4Zjgs/dC1wYWQsNjAweDYw/MCxmOGY4ZjgudTMu/anBn'}></img>
       </div>
       
-      <button className="start" type="submit">Add</button>
+      <button style={{color:"black",borderColor:"black"}} className="start" type="submit">Add</button>
         
     </form>
     </>
