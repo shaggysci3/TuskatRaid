@@ -39,10 +39,10 @@ const Upcoming = () =>{
           {!allShows?<>
             <h1>shows loading please hold</h1>
           </>:<>
-          <Events name={"Jam"} date={"10/10/2025"} time={"1030"} img={"https://cdn.pixilart.com/photos/large/e87ac512e08f0a1.png"} location={"boston"} />
+          <Events name={"Tusken and The Raiders 2: Electric Boogaloo"} date={"09/28/2024"} time={"1200"} img={"src/assets/tuskenAndTheRaiders.jpg"} location={"188 Winchester street"} />
           {/* {shows} */}
           </>}
-         {/* <Link style={{color:"black",borderColor:"black",marginTop:"20px"}} className="navLink"  to="/admin">login</Link> */}
+         <Link style={{color:"black",borderColor:"black",marginTop:"20px"}} className="navLink"  to="/admin">login</Link>
 
 
       </div>
