@@ -42,8 +42,8 @@ const Upcoming = () =>{
             <h1>shows loading please hold</h1>
           </>:<>
           {/* <Events name={"Tusken and The Raiders 2: Electric Boogaloo"} date={"09/28/2024"} time={"1200"} img={"https://cdn.discordapp.com/attachments/1251601675580608622/1307899287228780626/tuskenAndTheRaiders.jpg?ex=673bfba1&is=673aaa21&hm=93bc9466c730d8d85fa5ecc9dc349aaa2d9f88273f62edd1bc314db1a986aa0f&"} location={"188 Winchester street"} /> */}
-          {shows}
           {/* shows variable this is the shows from the database mapped out for people to see */}
+          {shows}
           </>}
          <Link style={{color:"black",borderColor:"black",marginTop:"20px"}} className="navLink"  to="/admin">login</Link>
 

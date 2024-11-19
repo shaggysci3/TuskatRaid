@@ -1,6 +1,7 @@
 import { useState } from "react"
 
 const DeleteShow = ({showId}) =>{
+   const[deleteButton,setDeleteButton]=useState()
  
     async function deleteUser() {
         try {
@@ -25,7 +26,7 @@ const DeleteShow = ({showId}) =>{
 
     return(
       <>
-      <button className="closeButton" onClick={deleteUser}>X</button>
+      <button className="closeButton" onClick={deleteUser}></button>
         
       </>
     )

@@ -261,22 +261,29 @@ a{
   border-radius: 33px;
   border: solid rgb(216, 68, 63) ;
   position:relative;
-  top: -170px;
+  top: -270px;
   left: -37px;
   transition: 200ms;
 }
 .closeButton:hover{
   cursor: pointer;
   background:rgba(219, 0, 91, 0.753) ;
-  padding-inline: 20px;
+  padding-inline: 40px; 
   transition: 200ms;
-  transform: translateX(-6px);
+  transform: translateX(-55px);
 
 }
 .closeButton:active{
   background: rgb(216, 36, 30);
   scale: 90%;
-
+}
+.closeButton::after{
+  content: "X";
+}
+.closeButton:hover::after{
+  content: "Delete?";
+  font-weight:900;
+  font-size: 12pt;
 }
 .form{
   max-width: 200px;

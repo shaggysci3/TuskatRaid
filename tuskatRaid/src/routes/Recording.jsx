@@ -4,7 +4,7 @@ import YoutubeEmbed from "../components/YoutubeEmbed"
 import ReactPlayer from "react-player"
 
 const Recording = () =>{
- 
+ const videoID= "kJJ9oAjkABk"
 
  
    
@@ -16,8 +16,13 @@ const Recording = () =>{
         <div className="recordingPage">
           {/* <h1>we have no past shows at the moment</h1> */}
           
-          <iframe className="videoPlayer" src="https://drive.google.com/file/d/1clmeKh7KyFxM9W9gDwJZ2kAMF5ecRjIO/preview" width="640" height="480" allow="autoplay"></iframe>
-          {/* <YoutubeEmbed videoId="uTpSm5AZzT0" /> */}
+          <iframe
+        width="560"
+        height="315"
+        src={`https://www.youtube.com/embed/${videoID}`}
+        // frameBorder="0"
+        allowFullScreen
+      ></iframe>          {/* <YoutubeEmbed videoId="uTpSm5AZzT0" /> */}
         </div>
       </div>
         
