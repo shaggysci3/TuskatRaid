@@ -26,6 +26,9 @@
           /* align-items: center; */
           box-shadow: 5px 5px 1px 1px black;
       }
+      .aboutContainer{
+        max-width: 300px;
+      }
       .siteName{
         margin: 0;
         color: white;

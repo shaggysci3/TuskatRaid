@@ -347,3 +347,12 @@ a{
     /* align-items: center; */
     box-shadow: 5px 5px 1px 1px black;
 }
+
+dd{
+  font-size: 15pt;
+  display: flex;
+  align-items: center;
+}
+.bandIcon{
+  max-block-size: 40px;
+}
