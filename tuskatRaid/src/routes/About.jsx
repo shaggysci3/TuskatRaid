@@ -9,7 +9,7 @@ const About = () =>{
 
     return(
       <>
-      <div style={{padding:"90px 0px 20px 30px",display:"flex",flexDirection:"column", alignItems:"center"}} className="pageContainer">
+      <div style={{padding:"90px 0px 20px 30px",display:"flex",flexDirection:"column", alignItems:"center",backgroundImage:"url(https://imgs.search.brave.com/ngGkzLYgmJ6Y1PBFX_CtiQHKAdthWjmZBtBdXuAm3pU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/ZXNhaHViYmxlLm9y/Zy9hcmNoaXZlcy9p/bWFnZXMvd2FsbHBh/cGVyMi9oZWljMTUw/OWEuanBn)"}} className="pageContainer">
       <div className="aboutContainer">
 
         <h1>about our band</h1>
