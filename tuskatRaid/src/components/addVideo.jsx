@@ -88,7 +88,7 @@ const AddVideo = ({}) => {
       
       
       <div>
-      <img className='ProductImg-S' src = {formData.img?`${formData.img}`:'https://imgs.search.brave.com/RVhvAn4kkMzSdJkFlO8xlUWHCSWgE7Tog5gRBGWYC3o/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9paDEu/cmVkYnViYmxlLm5l/dC9pbWFnZS4xMjY1/NTg5NDE0LjM1MDQv/bXAsNTA0eDQ5OCxt/YXR0ZSxmOGY4Zjgs/dC1wYWQsNjAweDYw/MCxmOGY4ZjgudTMu/anBn'}></img>
+      <img style={{maxWidth:"400px"}} className='ProductImg-S' src = {formData.img?`${formData.img}`:'https://hzlezhtofxpfmuntarie.supabase.co/storage/v1/object/public/recordings/Screenshot%202024-11-19%20183133.png'}></img>
       </div>
       
       <button style={{color:"black",borderColor:"black"}} className="start" type="submit">Add</button>
