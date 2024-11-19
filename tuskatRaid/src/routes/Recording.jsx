@@ -4,7 +4,7 @@ import YoutubeEmbed from "../components/YoutubeEmbed"
 import ReactPlayer from "react-player"
 
 const Recording = () =>{
- const videoID= "kJJ9oAjkABk"
+ const videoID= "kdvl2ThDZEM"
 
  
    
