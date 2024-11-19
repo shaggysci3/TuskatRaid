@@ -22,8 +22,10 @@ const Recording = ({id,videoId}) =>{
           {/* <h1>we have no past shows at the moment</h1> */}
           <div style={{padding:"10px"}}>
           {userData.id==1?<div>
+      <DeleteVideo videoId={id}/>
+
       </div>:<div>
-      <DeleteVideo videoId={id}/></div>}
+      </div>}
           <iframe
         width="560"
         height="315"
