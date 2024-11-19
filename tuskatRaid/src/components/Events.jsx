@@ -33,7 +33,7 @@ const Events = ({id,time,date,location,img,name}) =>{
           <h2>location: {location}</h2>
           </div>
         }
-      {userData.id==8?<div>
+      {userData.id==1?<div>
         {showForm?<></>:
         <DeleteShow showId = {id}/>
         }
