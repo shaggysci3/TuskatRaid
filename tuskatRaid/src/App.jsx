@@ -25,6 +25,7 @@ import About from "./routes/About";
 import Footer from "./components/Footer";
 import "./Phone.css"
 import Login from "./routes/login";
+import Listen from "./routes/Listen";
 
 
 
@@ -65,7 +66,7 @@ const router = createBrowserRouter([
         element: <Upcoming/>
       },{
         path: "/recording",
-        element: <Recording/>
+        element: <Listen/>
       },{
         path: "/Admin",
         element: <Login/>

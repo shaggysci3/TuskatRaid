@@ -13,7 +13,7 @@ const Home = () =>{
         <div className="slider">
             <img className="logoHome" src="https://cdn.pixilart.com/photos/large/02c512aec78be97.png"></img>
             <div className="buttonContainer">
-            <Link to={"/shows"} className="start">Shows</Link>
+            <Link to={"/admin"} className="start">Login</Link>
             <Link to={"/recording"} className="start">Listen</Link>
             <a style={{scrollBehavior:"smooth"}} href="#feature" className="start">Featured</a>
             </div>
