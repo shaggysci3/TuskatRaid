@@ -19,6 +19,7 @@ const Home = () =>{
             </div>
         </div>
         <div className="albumList">
+          <div className="tab"></div>
             <h1 id="feature"  className="albumName">featured Album: Terrapinix</h1>
             <div className="albumContainer">
             <img  className="albumCover" src="https://cdn.pixilart.com/photos/large/e87ac512e08f0a1.png"></img>

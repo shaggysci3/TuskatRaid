@@ -353,6 +353,14 @@ dd{
   display: flex;
   align-items: center;
 }
+.tab{
+  height: 10px;
+    background-color: black;
+    width: 40px;
+    position: relative;
+    top: -133px;
+    border-radius: 20px;
+}
 .bandIcon{
   max-block-size: 40px;
 }
