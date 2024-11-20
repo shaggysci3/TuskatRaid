@@ -16,6 +16,9 @@ const Footer = () =>{
         <Link to={"/contact"} >
           <h2 className="footLink">Contact</h2>
         </Link>
+        <Link to={"/admin"}  >
+          <h2 className="footLink">Login</h2>
+        </Link>
 
       </div>
         
