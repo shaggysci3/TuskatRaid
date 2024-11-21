@@ -37,7 +37,7 @@ useEffect(() => {
         <p>{Info.about}</p>
           
             
-          </>:<></>}
+          </>:<><h1>Loading</h1></>}
           <div style={{display:"flex"}}>
 
 
