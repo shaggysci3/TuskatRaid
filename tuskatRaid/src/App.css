@@ -84,7 +84,7 @@ a{
 }
 .tos:hover{
   transition: 60ms;
-  color: #F3EEE6;
+  color: #643B22;
   cursor: pointer;
 }
 
@@ -97,7 +97,7 @@ a{
   z-index: 2;
   background-color:#643B22;
   width: 100%;
-  height: 40px;
+  height: 60px;
   display: flex;
   justify-content: center;
   border-radius: 10px 10px 0px 0px;
