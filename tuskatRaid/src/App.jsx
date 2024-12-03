@@ -43,6 +43,11 @@ const App = () =>{
       <Navbar/>
       <Outlet context={[userData,setUserData]}/>
       <Footer/>
+      <div className="footer">
+        <h3 style={{fontFamily:"'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif"}}>© 2024 Matthew Sandor</h3>
+        <a className="tos" target="_blank" href="https://www.freeprivacypolicy.com/live/97504233-0e26-4794-bcc9-6d6f6a401114">Private policy</a>
+        <a className="tos" target="_blank" href="https://www.freeprivacypolicy.com/live/cec0e425-eec0-45de-b42f-3f7a5e677b56">Terms of Service</a>
+      </div>
       
     </div>
     </>
