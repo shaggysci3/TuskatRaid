@@ -15,7 +15,7 @@ const Home = () =>{
             <div className="buttonContainer">
             <Link to={"/admin"} className="start">Login</Link>
             <Link to={"/recording"} className="start">Listen</Link>
-            <a style={{scrollBehavior:"smooth"}} href="#feature" className="start">Featured</a>
+            <Link to={"/about"} style={{scrollBehavior:"smooth"}} href="#feature" className="start">About</Link>
             </div>
         </div>
         <div className="albumList">
