@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import PatchAbout from "../components/PatchAbout"
 import { useOutletContext } from "react-router-dom"
+import AboutIcon from "../components/AboutIcon"
 // import Switch from "../components/Switch"
 
 const About = () =>{
@@ -43,16 +44,20 @@ useEffect(() => {
 
         <dl>
           <dd>
-            <img style={{padding:"10px"}} className="bandIcon" src="https://cdn-icons-png.flaticon.com/512/4312/4312699.png"></img>Brian</dd>
+            <img style={{padding:"10px"}} className="bandIcon" src="https://cdn-icons-png.flaticon.com/512/4312/4312699.png"></img>Brian
+            </dd>
           <dd>
-          <img style={{padding:"10px"}} className="bandIcon" src="https://cdn-icons-png.flaticon.com/512/5096/5096217.png"></img>Justin</dd>
+          <img style={{padding:"10px"}} className="bandIcon" src="https://cdn-icons-png.flaticon.com/512/5096/5096217.png"></img>Justin
+          </dd>
           <dd>
-          <img style={{padding:"10px"}} className="bandIcon" src="https://cdn-icons-png.flaticon.com/512/26/26478.png"></img>Alex</dd>
+          <img style={{padding:"10px"}} className="bandIcon" src="https://cdn-icons-png.flaticon.com/512/26/26478.png"></img>Alex
+          </dd>
           <dd>
-          <img style={{padding:"10px"}} className="bandIcon" src="https://cdn-icons-png.flaticon.com/512/1789/1789712.png"></img>J.P.</dd>
+          <img style={{padding:"10px"}} className="bandIcon" src="https://cdn-icons-png.flaticon.com/512/1789/1789712.png"></img>J.P.
+          </dd>
         </dl>
         {userData.id==1?<>
-        <PatchAbout/>  
+        <PatchAbout />
           </>:<></>}
           {/* <p>this fearsome foursome has played such venues as Mos Eisley Cantina, the Moons of Yavin Tavern, and Simerville Porchfest in Boston.</p> */}
           </div>

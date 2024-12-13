@@ -2,12 +2,27 @@ import React, { useEffect, useState } from 'react';
 import { Button } from 'react-bootstrap';
 import { useOutletContext, useRouteLoaderData } from 'react-router-dom';
 
-const PatchAbout = () => {
+const PatchAbout = ({}) => {
   // states
   // const [showForm, setShowForm] = useState(false);
 //   const[userData,setUserData]=useOutletContext()
+
+//  fetch shows from the databse
+
+const[Info,setInfo]=useState()
+useEffect(() => {
+  // setLoading(true)
+  const fetchInfo = async () => {
+    const response = await fetch("https://birds-ub6e.onrender.com/about/1");
+    const InfoArr = await response.json();
+    setNewInfo(InfoArr);
+    // setLoading(false)
+  };
+  fetchInfo().catch(console.error);
+}, []);
+
   const [newInfo, setNewInfo] = useState({
-    about:"",
+    about:`${Info}`,
     
   });
 
