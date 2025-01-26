@@ -99,7 +99,7 @@ const Login = () => {
       </div></>)}
     {loading?<>
     
-      <img src='https://media1.giphy.com/media/ZBQhoZC0nqknSviPqT/giphy.webp?cid=790b76113a8mnmiu77055p86djrbg9zs0uwf8hxud4njltx5&ep=v1_gifs_search&rid=giphy.webp&ct=g'></img>
+      <img src='https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZzM3aDk2bjN3NGNxMWplMTJjMjBpN3ZzMHQ3emd1NWtuOHF3b3A5cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fUMJgJ56wTGa67VVH9/giphy.gif'></img>
     </>:<></>}
     </div>
     </div>

@@ -186,6 +186,18 @@ a{
   flex-direction: row;
   
 }
+.albumSong{
+
+}
+.albumSong:hover{
+  box-shadow: 7px 7px 20px 1px black;
+  scale: 102%;
+  cursor: pointer;
+}
+.albumSong:focus{
+  box-shadow: 7px 7px 20px 1px rgb(51, 114, 49);
+
+}
 /* .albumName{
 
 } */
