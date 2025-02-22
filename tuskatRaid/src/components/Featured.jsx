@@ -30,16 +30,46 @@ const Featured = () =>{
     }
   }, []);
   async function onLeftClick(e){
-    if(userData.id==1){
-      console.log(e.target.value)}
+    e.preventDefault();
+    
+    try {
+      const response = await fetch(`https://birds-ub6e.onrender.com/song/${e.target.value}`, {
+        method: 'PATCH', // Change method to PATCH
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            album_id: "2", 
+        }),
+      });
+
+      if (response.ok) {
+        alert(`song has been added to album 2`)
+        console.log(` updated successfully`);
+        
+      } else {
+        alert(`Failed to update user with ID `)
+        console.error(`Failed to update user with ID `);
+      }
+    } catch (error) {
+      console.error('Error updating user:', error);
+    }
+      console.log(songs)}
+  
+  function doNothing(){
+
   }
+
+
+
   if(songs){
     // song = songs.filter((song)=>{
     //   return song.album_id === 1
     //  })
     //  console.log("this is what the fetch is getting: " ,songs.songs)
+    <h1>{songs}</h1>
      featuredSongs = songs.songs.map((songs)=>{
-        return <li value={songs.id} onClick={onLeftClick}  className={userData.id==1?"albumSong":""} key={songs.id}>{songs.song}</li>
+        return <li value={songs.id} onClick={userData.id==1?onLeftClick:doNothing()}  className={userData.id==1?"albumSong":""} key={songs.id}>{songs.song}</li>
      })
      
   }
