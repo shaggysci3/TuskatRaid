@@ -91,6 +91,7 @@ const AddShow = ({setShow}) => {
         <label>Show Name:</label>
         <br></br>
         <input
+        placeholder="Name..."
         type='text'
         id='name'
         value={formData.name}
@@ -99,7 +100,7 @@ const AddShow = ({setShow}) => {
       <div style={{position:"relative"}} className="formItem">
         <label>date:</label>
         <input
-        
+        placeholder="00/00/00"
         
         type='text'
         id='date'
@@ -109,7 +110,7 @@ const AddShow = ({setShow}) => {
       <div style={{position:"relative"}} className="formItem">
         <label>time:</label>
         <input
-        
+        placeholder="1200"
         type='text'
         id='time'
         value={formData.time}
@@ -118,6 +119,7 @@ const AddShow = ({setShow}) => {
       <div style={{position:"relative"}} className="formItem">
         <label>location:</label>
         <input
+        placeholder="Location Name..."
         type='text'
         id='location'
         value={formData.location}
@@ -127,6 +129,7 @@ const AddShow = ({setShow}) => {
         <label>Image</label>
         <br></br>
         <input
+        placeholder="img url..."
         type='text'
         id='img'
         value={formData.img}

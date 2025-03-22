@@ -1,4 +1,10 @@
 import { useEffect, useState } from "react"
+// draggable imp[orts 
+import {DndContext} from '@dnd-kit/core';
+import {Droppable} from './Droppable';
+import {Draggable} from './Draggable';
+
+
 import PatchAbout from "../components/PatchAbout"
 import { useOutletContext } from "react-router-dom"
 import AboutIcon from "../components/AboutIcon"
@@ -8,6 +14,13 @@ const About = () =>{
  const[Info,setInfo]=useState()
  const[loading,setLoading]=useState()
  const[userData,setUserData]=useOutletContext()
+
+//  draggable testing 
+
+const [isDropped, setIsDropped] = useState(false);
+  const draggableMarkup = (
+    <Draggable>Drag me</Draggable>
+  );
  
 
 //  fetch shows from the databse
@@ -22,13 +35,29 @@ useEffect(() => {
   fetchInfo().catch(console.error);
 }, []);
 // console.log("about section",Info.about)
- 
+
+
+function handleDragEnd(event) {
+  if (event.over && event.over.id === 'droppable') {
+    setIsDropped(true);
+  }
+}
    
 
     return(
       <>
       <div style={{padding:"90px 0px 20px 30px",display:"flex",flexDirection:"column", alignItems:"center",backgroundImage:"url(https://imgs.search.brave.com/ngGkzLYgmJ6Y1PBFX_CtiQHKAdthWjmZBtBdXuAm3pU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/ZXNhaHViYmxlLm9y/Zy9hcmNoaXZlcy9p/bWFnZXMvd2FsbHBh/cGVyMi9oZWljMTUw/OWEuanBn)"}} className="pageContainer">
-      
+      <h1>Draggable goes here</h1>
+      <DndContext onDragEnd={handleDragEnd}>
+      {!isDropped ? draggableMarkup : null}
+      <Droppable>
+        {isDropped ? draggableMarkup : 'Drop here'}
+      </Droppable>
+
+      <Droppable>
+        {isDropped ? draggableMarkup : 'Drop here'}
+      </Droppable>
+      </DndContext>
       
       
       <div className="aboutContainer">
