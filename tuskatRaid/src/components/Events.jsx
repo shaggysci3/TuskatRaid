@@ -2,12 +2,14 @@ import { useState } from "react"
 import { useOutletContext } from "react-router-dom";
 import PatchShow from "./PatchShow";
 import DeleteShow from "./DeleteShow";
+import {DndContext} from '@dnd-kit/core';
 
 const Events = ({id,time,date,location,img,name}) =>{
- 
+  
   const numString = time.toString();
   const [showForm, setShowForm] = useState(false);
   const[userData,setUserData]=useOutletContext()
+
   
 
   const hours = parseInt(numString.slice(0, -2), 10);
@@ -41,6 +43,8 @@ const Events = ({id,time,date,location,img,name}) =>{
       </div>:<></>}
         </div>
       </div>
+
+      
       </div>
         
       </>

@@ -394,3 +394,153 @@ dd{
 .bandIcon{
   max-block-size: 40px;
 }
+
+/* glow effect */
+
+
+
+:root {
+  /* Base font size */
+  font-size: 10px;   
+  
+  /* Set neon color */
+  --neon-text-color: rgb(4, 115, 250);
+  --neon-border-color: rgba(0, 128, 255, 0.781);
+
+  --neon-select-color:rgba(0, 255, 106, 0.781);
+  --neon-remove-color:rgba(225, 26, 0, 0.781);
+}
+
+/* body {
+  font-family: 'Exo 2', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  background: #000;
+  min-height: 100vh;
+} */
+
+.flicker {
+  animation: flicker 1.5s infinite alternate;  
+  padding: 10px 15px;
+    margin: 5px;
+    color:#121211;
+    backdrop-filter: blur(10px);
+    background-color: rgba(17, 146, 220, 0.503);
+    border: 1px solid white;
+}
+.selectedFlicker{
+  animation: selectedFlicker 1.5s infinite alternate;  
+  padding: 10px 15px;
+    margin: 5px;
+    color:#121211;
+    backdrop-filter: blur(10px);
+    background-color: rgba(17, 220, 78, 0.503);
+    border: 1px solid white;
+    
+    
+}
+.redFlicker{
+  animation: redFlicker 1.5s infinite alternate;  
+  padding: 10px 15px;
+    margin: 5px;
+    color:#121211;
+    backdrop-filter: blur(10px);
+    background-color: rgba(220, 17, 17, 0.503);
+    border: 1px solid white;
+    
+    
+}
+
+.flicker::-moz-selection {
+  background-color: var(--neon-border-color);
+  color: var(--neon-text-color);
+}
+
+.flicker::selection {
+  background-color: var(--neon-border-color);
+  color: var(--neon-text-color);
+}
+
+.flicker:focus {
+  /* background-color: chartreuse; */
+}
+.flicker:hover{
+  scale:90%;
+  transition: 100ms;
+  cursor: pointer;
+  
+}
+
+/* Animate neon flicker */
+@keyframes flicker {
+    
+    0%,17%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        box-shadow:
+            0 0 2rem #fff,
+            inset 0 0 2rem #fff,
+            0 0 2rem var(--neon-border-color),
+            inset 0 0 0.2rem var(--neon-border-color),
+            0 0 1rem var(--neon-border-color),
+            inset 0 0 3rem var(--neon-border-color);        
+    }
+    
+    18%,20%,55% {        
+      box-shadow:
+      0 0 2rem #fff,
+      inset 0 0 2rem #fff,
+      0 0 2rem rgba(36, 132, 248, 0.555),
+      inset 0 0 0.2rem rgba(36, 132, 248, 0.555),
+      0 0 1rem rgba(36, 132, 248, 0.555),
+      inset 0 0 3rem rgba(36, 132, 248, 0.555); 
+        
+    }    
+}
+
+@keyframes selectedFlicker {
+    
+  0%,17%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+      box-shadow:
+          0 0 2rem #fff,
+          inset 0 0 2rem #fff,
+          0 0 2rem var(--neon-select-color),
+          inset 0 0 0.2rem var(--neon-select-color),
+          0 0 1rem var(--neon-select-color),
+          inset 0 0 3rem var(--neon-select-color);        
+  }
+  
+  18%,20%,55% {        
+    box-shadow:
+    0 0 2rem #fff,
+    inset 0 0 2rem #fff,
+    0 0 2rem rgba(36, 248, 163, 0.555),
+    inset 0 0 0.2rem rgba(36, 248, 163, 0.555),
+    0 0 1rem rgba(36, 248, 163, 0.555),
+    inset 0 0 3rem rgba(36, 248, 163, 0.555),
+      
+  }    
+}
+
+@keyframes redFlicker {
+    
+  0%,17%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+      box-shadow:
+          0 0 2rem #fff,
+          inset 0 0 2rem #fff,
+          0 0 2rem var(--neon-remove-color),
+          inset 0 0 0.2rem var(--neon-remove-color),
+          0 0 1rem var(--neon-remove-color),
+          inset 0 0 3rem var(--neon-remove-color);        
+  }
+  
+  18%,20%,55% {        
+    box-shadow:
+    0 0 2rem #fff,
+    inset 0 0 2rem #fff,
+    0 0 2rem rgba(248, 47, 36, 0.555),
+    inset 0 0 0.2rem rgba(248, 47, 36, 0.555),
+    0 0 1rem rgba(248, 47, 36, 0.555),
+    inset 0 0 3rem rgba(248, 47, 36, 0.555),
+      
+  }    
+}
