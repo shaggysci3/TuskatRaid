@@ -2,7 +2,7 @@ import { useState } from "react"
 import { useOutletContext } from "react-router-dom";
 import PatchShow from "./PatchShow";
 import DeleteShow from "./DeleteShow";
-import {DndContext} from '@dnd-kit/core';
+// import {DndContext} from '@dnd-kit/core';
 
 const Events = ({id,time,date,location,img,name}) =>{
   
