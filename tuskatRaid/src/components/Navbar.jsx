@@ -16,7 +16,7 @@ const Navbar = () =>{
         </Link>
         <div className="linkContainer">
         <Link  to={"/"}>
-            <h1 className="navLink">Home</h1>
+            <h1 className="navLink" >Home</h1>
         </Link>
         <Link  to={"/shows"}>
             <h1 className="navLink">Shows</h1>

@@ -35,17 +35,21 @@ const Listen = () =>{
     return(
       <>
       <div className="pageContainer" style={{display:"flex",flexWrap:"wrap",justifyContent:"center"}}>
+      <div className="flicker"  style={{display:"flex",flexWrap:"wrap",justifyContent:"space-evenly"}}>
           {videos}
+      </div>
       {userData.id==1?<>
           
           
+
           <AddVideo/>
+          
             
           </>:<>
           </>}
 
         
-      </div>
+          </div>
         
       </>
     )

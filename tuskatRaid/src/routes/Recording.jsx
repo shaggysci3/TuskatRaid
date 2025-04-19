@@ -32,7 +32,10 @@ const Recording = ({id,videoId}) =>{
         src={`https://www.youtube.com/embed/${videoId}`}
         // frameBorder="0"
         allowFullScreen
-        ></iframe>          {/* <YoutubeEmbed videoId="uTpSm5AZzT0" /> */}
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        title="Embedded youtube"
+        ></iframe>          
+        {/* <h1 className="flicker">VideoId: {videoId}</h1> */}
         </div>
         {/* </div> */}
       {/* </div> */}
